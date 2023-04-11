@@ -33,3 +33,19 @@ y a este le pasamos por "nombre" la variable definida en app.component.ts
 <app-saludo [nombre]="nombre"> </app-saludo> //Aquí pasamos el valor del Input "nombre" , pero mostrará lo que la variable "nombre" definida en el componente superior contenga
 <app-saludo nombre="salvador"> </app-saludo> //Aqui pasamos el valor del Input "nombre" que mostrara el componente
 
+## FIREBASE y Angular (TEORIA & PRACTICA)
+Tutorial 1: https://www.youtube.com/watch?v=t_YSrxj0wGY 
+Tutorial 2: https://www.youtube.com/watch?v=46oqfkXrL80
+
+Guia oficial de Github :  https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
+
+
+### 6. Instalar FIREBASE en Angular :  "ng add @angular/fire" 
+
+### 7. Después de instalar, nos logueamos con "firebase login" y nos redirigirá a un enlace del buscador para iniciar con la cuenta de GMAIL
+
+### 8. comprobamos con el comando "firebase projects:list" y confirmamos que está la BD de appdev
+
+### 9. Iniciamos "firebase init" 
+#### Indicamos que es la opción "firestore" y "Use an existing project"... clicamos enter dos veces para que cree el archivo de configuración de firebase y listo
+

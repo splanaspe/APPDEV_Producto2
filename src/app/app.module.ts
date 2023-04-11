@@ -9,6 +9,10 @@ import { DetailComponent } from './components/detail/detail.component';
 import { FiltroPais } from './pipes/filtertPais.pipe';
 import { FiltroGenero } from './pipes/filterGenero.pipe';
 import { FilternombrePipe } from './pipes/filternombre.pipe';
+import { enviroment } from 'src/enviroments/enviroments';
+
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -23,7 +27,10 @@ import { FilternombrePipe } from './pipes/filternombre.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(enviroment.firebase)),
+    provideFirestore(() => getFirestore())
+
   ],
   providers: [],
   bootstrap: [AppComponent]
